@@ -1,0 +1,38 @@
+---
+abstract: 'A Thrift backend for ElasticSearch'
+author:
+  - 'Clinton Gormley <drtech@cpan.org>'
+build_requires:
+  Module::Build: 0.3601
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110930'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: ElasticSearch-Transport-Thrift
+requires:
+  Bit::Vector: 0
+  Class::Accessor: 0
+  Encode: 0
+  HTTP::Request: 0
+  IO::Select: 0
+  IO::Socket::INET: 0
+  IO::String: 0
+  LWP::UserAgent: 0
+  POSIX: 0
+  base: 0
+  constant: 0
+  parent: 0
+  perl: 5.6.0
+  strict: 0
+  utf8: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/clintongormley/ElasticSearch-Thrift/issues
+  homepage: https://metacpan.org/module/ElasticSearch
+  repository: git://github.com/clintongormley/ElasticSearch-Thrift.git
+version: 0.01

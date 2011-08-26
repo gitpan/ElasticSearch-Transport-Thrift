@@ -1,0 +1,67 @@
+{
+   "abstract" : "A Thrift backend for ElasticSearch",
+   "author" : [
+      "Clinton Gormley <drtech@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110930",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "ElasticSearch-Transport-Thrift",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Bit::Vector" : 0,
+            "Class::Accessor" : 0,
+            "Encode" : 0,
+            "HTTP::Request" : 0,
+            "IO::Select" : 0,
+            "IO::Socket::INET" : 0,
+            "IO::String" : 0,
+            "LWP::UserAgent" : 0,
+            "POSIX" : 0,
+            "base" : 0,
+            "constant" : 0,
+            "parent" : 0,
+            "perl" : "v5.6.0",
+            "strict" : 0,
+            "utf8" : 0,
+            "warnings" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/clintongormley/ElasticSearch-Thrift/issues"
+      },
+      "homepage" : "https://metacpan.org/module/ElasticSearch",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/clintongormley/ElasticSearch-Thrift.git",
+         "web" : "https://github.com/clintongormley/ElasticSearch-Thrift"
+      }
+   },
+   "version" : "0.01"
+}
+
