@@ -13,6 +13,9 @@ use ElasticSearch::Transport::ThriftBackend::Types;
 # HELPER FUNCTIONS AND STRUCTURES
 
 package ElasticSearch::Transport::ThriftBackend::Rest_execute_args;
+{
+  $ElasticSearch::Transport::ThriftBackend::Rest_execute_args::VERSION = '0.02';
+}
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::Rest_execute_args->mk_accessors( qw( request ) );
 
@@ -78,6 +81,9 @@ sub write {
 }
 
 package ElasticSearch::Transport::ThriftBackend::Rest_execute_result;
+{
+  $ElasticSearch::Transport::ThriftBackend::Rest_execute_result::VERSION = '0.02';
+}
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::Rest_execute_result->mk_accessors( qw( success ) );
 
@@ -143,6 +149,9 @@ sub write {
 }
 
 package ElasticSearch::Transport::ThriftBackend::RestIf;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestIf::VERSION = '0.02';
+}
 
 use strict;
 
@@ -155,6 +164,9 @@ sub execute{
 }
 
 package ElasticSearch::Transport::ThriftBackend::RestRest;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestRest::VERSION = '0.02';
+}
 
 use strict;
 
@@ -174,6 +186,9 @@ sub execute{
 }
 
 package ElasticSearch::Transport::ThriftBackend::RestClient;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestClient::VERSION = '0.02';
+}
 
 
 use base qw(ElasticSearch::Transport::ThriftBackend::RestIf);
@@ -230,6 +245,9 @@ sub recv_execute{
   die "execute failed: unknown result";
 }
 package ElasticSearch::Transport::ThriftBackend::RestProcessor;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestProcessor::VERSION = '0.02';
+}
 
 use strict;
 
@@ -287,7 +305,7 @@ ElasticSearch::Transport::ThriftBackend::Rest_execute_args
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

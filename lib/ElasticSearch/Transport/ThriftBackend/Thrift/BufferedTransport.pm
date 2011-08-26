@@ -25,6 +25,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift;
 use ElasticSearch::Transport::ThriftBackend::Thrift::Transport;
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransport;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransport::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
 
 sub new
@@ -110,6 +113,9 @@ sub flush
 # BufferedTransport factory creates buffered transport objects from transports
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransportFactory;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransportFactory::VERSION = '0.02';
+}
 
 sub new {
     my $classname = shift;
@@ -144,7 +150,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransport
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

@@ -29,6 +29,9 @@ use IO::Socket::INET;
 use IO::Select;
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::Socket;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::Socket::VERSION = '0.02';
+}
 
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
 
@@ -274,6 +277,9 @@ sub flush
 # Build a ServerSocket from the ServerTransport base class
 #
 package  ElasticSearch::Transport::ThriftBackend::Thrift::ServerSocket;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::ServerSocket::VERSION = '0.02';
+}
 
 use base qw( ElasticSearch::Transport::ThriftBackend::Thrift::Socket ElasticSearch::Transport::ThriftBackend::Thrift::ServerTransport );
 
@@ -339,7 +345,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::Socket
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

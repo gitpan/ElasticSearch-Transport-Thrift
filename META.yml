@@ -35,4 +35,4 @@ resources:
   bugtracker: https://github.com/clintongormley/ElasticSearch-Thrift/issues
   homepage: https://metacpan.org/module/ElasticSearch
   repository: git://github.com/clintongormley/ElasticSearch-Thrift.git
-version: 0.01
+version: 0.02

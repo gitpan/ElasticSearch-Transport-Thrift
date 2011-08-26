@@ -25,6 +25,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift;
 use ElasticSearch::Transport::ThriftBackend::Thrift::Transport;
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::MemoryBuffer;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::MemoryBuffer::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
 
 sub new
@@ -154,7 +157,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::MemoryBuffer
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

@@ -34,6 +34,9 @@ use Bit::Vector;
 # Binary implementation of the ElasticSearch::Transport::ThriftBackend::Thrift protocol.
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Protocol');
 
 use constant VERSION_MASK   => 0xffff0000;
@@ -478,6 +481,9 @@ sub readStringBody
 # Binary Protocol Factory
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocolFactory;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocolFactory::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::TProtocolFactory');
 
 sub new
@@ -506,7 +512,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

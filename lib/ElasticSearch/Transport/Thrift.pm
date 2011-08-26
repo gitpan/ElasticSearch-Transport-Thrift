@@ -8,7 +8,7 @@ use ElasticSearch::Transport::ThriftBackend::Thrift::Socket;
 use ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransport;
 use ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Encode qw(decode_utf8);
 
@@ -143,7 +143,7 @@ ElasticSearch::Transport::Thrift - A Thrift backend for ElasticSearch
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

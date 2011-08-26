@@ -27,6 +27,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift;
 # Protocol exceptions
 #
 package ElasticSearch::Transport::ThriftBackend::TProtocolException;
+{
+  $ElasticSearch::Transport::ThriftBackend::TProtocolException::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::TException');
 
 use constant UNKNOWN       => 0;
@@ -47,6 +50,9 @@ sub new {
 # Protocol base class module.
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::Protocol;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::Protocol::VERSION = '0.02';
+}
 
 sub new {
     my $classname = shift;
@@ -517,6 +523,9 @@ sub skipBinary
 # Protocol factory creates protocol objects from transports
 #
 package ElasticSearch::Transport::ThriftBackend::TProtocolFactory;
+{
+  $ElasticSearch::Transport::ThriftBackend::TProtocolFactory::VERSION = '0.02';
+}
 
 
 sub new {
@@ -549,7 +558,7 @@ ElasticSearch::Transport::ThriftBackend::TProtocolException
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

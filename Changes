@@ -1,5 +1,9 @@
 Revision history for ElasticSearch-Transport-Thrift
 
+0.02    2011-08-26
+
+        All modules need versions
+
 0.01    2011-08-26
 
         First release, after splitting from the main ElasticSearch release

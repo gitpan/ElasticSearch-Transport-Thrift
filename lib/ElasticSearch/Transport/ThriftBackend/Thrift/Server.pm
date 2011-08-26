@@ -30,6 +30,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol;
 # Server base class module
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::Server;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::Server::VERSION = '0.02';
+}
 
 # 3 possible constructors:
 #   1.  (processor, serverTransport)
@@ -131,6 +134,9 @@ sub _handleException
 # SimpleServer from the Server base class that handles one connection at a time
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::SimpleServer;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::SimpleServer::VERSION = '0.02';
+}
 use base qw( ElasticSearch::Transport::ThriftBackend::Thrift::Server );
 
 sub new
@@ -174,6 +180,9 @@ sub serve
 # ForkingServer that forks a new process for each request
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::ForkingServer;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::ForkingServer::VERSION = '0.02';
+}
 use base qw( ElasticSearch::Transport::ThriftBackend::Thrift::Server );
 
 use POSIX ":sys_wait_h";
@@ -322,7 +331,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::Server
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

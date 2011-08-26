@@ -27,6 +27,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift;
 # Transport exceptions
 #
 package ElasticSearch::Transport::ThriftBackend::TTransportException;
+{
+  $ElasticSearch::Transport::ThriftBackend::TTransportException::VERSION = '0.02';
+}
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::TException');
 
 use constant UNKNOWN      => 0;
@@ -43,6 +46,9 @@ sub new{
 }
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::Transport;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::Transport::VERSION = '0.02';
+}
 
 #
 # Whether this transport is open.
@@ -130,6 +136,9 @@ sub flush {}
 # TransportFactory creates transport objects from transports
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::TransportFactory;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::TransportFactory::VERSION = '0.02';
+}
 
 sub new {
     my $classname = shift;
@@ -156,6 +165,9 @@ sub getTransport
 #  ServerTransport base class module
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::ServerTransport;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::ServerTransport::VERSION = '0.02';
+}
 
 sub listen
 {
@@ -185,7 +197,7 @@ ElasticSearch::Transport::ThriftBackend::TTransportException
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

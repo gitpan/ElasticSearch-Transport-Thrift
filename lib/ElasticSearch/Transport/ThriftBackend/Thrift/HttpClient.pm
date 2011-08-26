@@ -29,6 +29,9 @@ use LWP::UserAgent;
 use IO::String;
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient::VERSION = '0.02';
+}
 
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
 
@@ -208,7 +211,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

@@ -4,6 +4,9 @@
 # DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
 #
 package ElasticSearch::Transport::ThriftBackend::Constants;
+{
+  $ElasticSearch::Transport::ThriftBackend::Constants::VERSION = '0.02';
+}
 require 5.6.0;
 use strict;
 use warnings;
@@ -21,7 +24,7 @@ ElasticSearch::Transport::ThriftBackend::Constants
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

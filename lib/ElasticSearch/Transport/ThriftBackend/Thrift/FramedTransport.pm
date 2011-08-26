@@ -30,6 +30,9 @@ use ElasticSearch::Transport::ThriftBackend::Thrift::Transport;
 # @package thrift.transport
 #
 package ElasticSearch::Transport::ThriftBackend::Thrift::FramedTransport;
+{
+  $ElasticSearch::Transport::ThriftBackend::Thrift::FramedTransport::VERSION = '0.02';
+}
 
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
 
@@ -172,7 +175,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::FramedTransport
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

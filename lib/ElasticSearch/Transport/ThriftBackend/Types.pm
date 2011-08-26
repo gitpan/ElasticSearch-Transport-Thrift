@@ -9,6 +9,9 @@ use warnings;
 use ElasticSearch::Transport::ThriftBackend::Thrift;
 
 package ElasticSearch::Transport::ThriftBackend::Method;
+{
+  $ElasticSearch::Transport::ThriftBackend::Method::VERSION = '0.02';
+}
 use constant GET => 0;
 use constant PUT => 1;
 use constant POST => 2;
@@ -16,6 +19,9 @@ use constant DELETE => 3;
 use constant HEAD => 4;
 use constant OPTIONS => 5;
 package ElasticSearch::Transport::ThriftBackend::Status;
+{
+  $ElasticSearch::Transport::ThriftBackend::Status::VERSION = '0.02';
+}
 use constant CONT => 100;
 use constant SWITCHING_PROTOCOLS => 101;
 use constant OK => 200;
@@ -61,6 +67,9 @@ use constant SERVICE_UNAVAILABLE => 503;
 use constant GATEWAY_TIMEOUT => 504;
 use constant INSUFFICIENT_STORAGE => 506;
 package ElasticSearch::Transport::ThriftBackend::RestRequest;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestRequest::VERSION = '0.02';
+}
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::RestRequest->mk_accessors( qw( method uri parameters headers body ) );
 
@@ -235,6 +244,9 @@ sub write {
 }
 
 package ElasticSearch::Transport::ThriftBackend::RestResponse;
+{
+  $ElasticSearch::Transport::ThriftBackend::RestResponse::VERSION = '0.02';
+}
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::RestResponse->mk_accessors( qw( status headers body ) );
 
@@ -364,7 +376,7 @@ ElasticSearch::Transport::ThriftBackend::Method
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 
