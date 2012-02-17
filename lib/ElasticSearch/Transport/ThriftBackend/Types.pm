@@ -10,7 +10,7 @@ use ElasticSearch::Transport::ThriftBackend::Thrift;
 
 package ElasticSearch::Transport::ThriftBackend::Method;
 {
-  $ElasticSearch::Transport::ThriftBackend::Method::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::Method::VERSION = '0.03';
 }
 use constant GET => 0;
 use constant PUT => 1;
@@ -20,7 +20,7 @@ use constant HEAD => 4;
 use constant OPTIONS => 5;
 package ElasticSearch::Transport::ThriftBackend::Status;
 {
-  $ElasticSearch::Transport::ThriftBackend::Status::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::Status::VERSION = '0.03';
 }
 use constant CONT => 100;
 use constant SWITCHING_PROTOCOLS => 101;
@@ -68,7 +68,7 @@ use constant GATEWAY_TIMEOUT => 504;
 use constant INSUFFICIENT_STORAGE => 506;
 package ElasticSearch::Transport::ThriftBackend::RestRequest;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestRequest::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestRequest::VERSION = '0.03';
 }
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::RestRequest->mk_accessors( qw( method uri parameters headers body ) );
@@ -245,7 +245,7 @@ sub write {
 
 package ElasticSearch::Transport::ThriftBackend::RestResponse;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestResponse::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestResponse::VERSION = '0.03';
 }
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::RestResponse->mk_accessors( qw( status headers body ) );
@@ -376,7 +376,7 @@ ElasticSearch::Transport::ThriftBackend::Method
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -384,7 +384,7 @@ Clinton Gormley <drtech@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Clinton Gormley.
+This software is copyright (c) 2012 by Clinton Gormley.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

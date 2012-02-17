@@ -14,7 +14,7 @@ use ElasticSearch::Transport::ThriftBackend::Types;
 
 package ElasticSearch::Transport::ThriftBackend::Rest_execute_args;
 {
-  $ElasticSearch::Transport::ThriftBackend::Rest_execute_args::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::Rest_execute_args::VERSION = '0.03';
 }
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::Rest_execute_args->mk_accessors( qw( request ) );
@@ -82,7 +82,7 @@ sub write {
 
 package ElasticSearch::Transport::ThriftBackend::Rest_execute_result;
 {
-  $ElasticSearch::Transport::ThriftBackend::Rest_execute_result::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::Rest_execute_result::VERSION = '0.03';
 }
 use base qw(Class::Accessor);
 ElasticSearch::Transport::ThriftBackend::Rest_execute_result->mk_accessors( qw( success ) );
@@ -150,7 +150,7 @@ sub write {
 
 package ElasticSearch::Transport::ThriftBackend::RestIf;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestIf::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestIf::VERSION = '0.03';
 }
 
 use strict;
@@ -165,7 +165,7 @@ sub execute{
 
 package ElasticSearch::Transport::ThriftBackend::RestRest;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestRest::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestRest::VERSION = '0.03';
 }
 
 use strict;
@@ -187,7 +187,7 @@ sub execute{
 
 package ElasticSearch::Transport::ThriftBackend::RestClient;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestClient::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestClient::VERSION = '0.03';
 }
 
 
@@ -246,7 +246,7 @@ sub recv_execute{
 }
 package ElasticSearch::Transport::ThriftBackend::RestProcessor;
 {
-  $ElasticSearch::Transport::ThriftBackend::RestProcessor::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::RestProcessor::VERSION = '0.03';
 }
 
 use strict;
@@ -305,7 +305,7 @@ ElasticSearch::Transport::ThriftBackend::Rest_execute_args
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -313,7 +313,7 @@ Clinton Gormley <drtech@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Clinton Gormley.
+This software is copyright (c) 2012 by Clinton Gormley.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

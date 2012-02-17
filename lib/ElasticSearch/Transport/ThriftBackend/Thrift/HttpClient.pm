@@ -30,7 +30,7 @@ use IO::String;
 
 package ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient;
 {
-  $ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient::VERSION = '0.02';
+  $ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient::VERSION = '0.03';
 }
 
 use base('ElasticSearch::Transport::ThriftBackend::Thrift::Transport');
@@ -211,7 +211,7 @@ ElasticSearch::Transport::ThriftBackend::Thrift::HttpClient
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -219,7 +219,7 @@ Clinton Gormley <drtech@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Clinton Gormley.
+This software is copyright (c) 2012 by Clinton Gormley.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

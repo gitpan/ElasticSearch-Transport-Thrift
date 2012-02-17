@@ -3,10 +3,9 @@ abstract: 'A Thrift backend for ElasticSearch'
 author:
   - 'Clinton Gormley <drtech@cpan.org>'
 build_requires:
-  Module::Build: 0.3601
   Test::More: 0
 configure_requires:
-  Module::Build: 0.3601
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110930'
 license: perl
@@ -35,4 +34,4 @@ resources:
   bugtracker: https://github.com/clintongormley/ElasticSearch-Thrift/issues
   homepage: https://metacpan.org/module/ElasticSearch
   repository: git://github.com/clintongormley/ElasticSearch-Thrift.git
-version: 0.02
+version: 0.03

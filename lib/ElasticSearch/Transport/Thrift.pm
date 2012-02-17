@@ -8,7 +8,7 @@ use ElasticSearch::Transport::ThriftBackend::Thrift::Socket;
 use ElasticSearch::Transport::ThriftBackend::Thrift::BufferedTransport;
 use ElasticSearch::Transport::ThriftBackend::Thrift::BinaryProtocol;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Encode qw(decode_utf8);
 
@@ -68,11 +68,12 @@ sub send_request {
 
     my $msg = $self->http_status($code);
 
-    my $type
-        = $code == 409 ? 'Conflict'
-        : $code == 404 ? 'Missing'
-        : $msg eq 'REQUEST_TIMEOUT' || $msg eq 'GATEWAY_TIMEOUT' ? 'Timeout'
-        :                                                          'Request';
+    my $type = $self->code_to_error($code)
+        || (
+        $msg eq 'REQUEST_TIMEOUT' || $msg eq 'GATEWAY_TIMEOUT'
+        ? 'Timeout'
+        : 'Request'
+        );
     my $error_params = {
         server      => $server,
         status_code => $code,
@@ -143,7 +144,7 @@ ElasticSearch::Transport::Thrift - A Thrift backend for ElasticSearch
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -184,6 +185,8 @@ recommend one of the C<http> backends instead.
 
 =item * L<ElasticSearch::Transport::AEHTTP>
 
+=item * L<ElasticSearch::Transport::AECurl>
+
 =item * L<ElasticSearch::Transport::HTTPLite>
 
 =back
@@ -196,7 +199,7 @@ Clinton Gormley <drtech@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Clinton Gormley.
+This software is copyright (c) 2012 by Clinton Gormley.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
